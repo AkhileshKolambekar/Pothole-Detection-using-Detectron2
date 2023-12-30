@@ -1,6 +1,7 @@
 # Pothole-Detection-using-Detectron2
 The images used to predict were :-
 
+![img-664](https://github.com/AkhileshKolambekar/Pothole-Detection-using-Detectron2/assets/86556963/94825093-0601-4ecd-8c3a-c2a260e0022d)
 
 
 The flask output is as follows :-
