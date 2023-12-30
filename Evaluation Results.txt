@@ -1,0 +1,74 @@
+[12/29 21:04:05 d2.evaluation.coco_evaluation]: Fast COCO eval is not built. Falling back to official COCO eval.
+WARNING [12/29 21:04:05 d2.data.datasets.coco]: 
+Category ids in annotations are not in [1, #categories]! We'll apply a mapping for you.
+
+[12/29 21:04:05 d2.data.datasets.coco]: Loaded 99 images in COCO format from /content/val_coco.json
+[12/29 21:04:05 d2.data.build]: Distribution of instances among all 1 categories:
+|  category  | #instances   |
+|:----------:|:-------------|
+|  pothole   | 290          |
+|            |              |
+[12/29 21:04:05 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[12/29 21:04:05 d2.data.common]: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[12/29 21:04:05 d2.data.common]: Serializing 99 elements to byte tensors and concatenating them all ...
+[12/29 21:04:05 d2.data.common]: Serialized dataset takes 0.05 MiB
+[12/29 21:04:05 d2.evaluation.evaluator]: Start inference on 99 batches
+[12/29 21:04:06 d2.evaluation.evaluator]: Inference done 11/99. Dataloading: 0.0016 s/iter. Inference: 0.1236 s/iter. Eval: 0.0016 s/iter. Total: 0.1269 s/iter. ETA=0:00:11
+[12/29 21:04:11 d2.evaluation.evaluator]: Inference done 49/99. Dataloading: 0.0022 s/iter. Inference: 0.1297 s/iter. Eval: 0.0016 s/iter. Total: 0.1335 s/iter. ETA=0:00:06
+[12/29 21:04:17 d2.evaluation.evaluator]: Inference done 86/99. Dataloading: 0.0032 s/iter. Inference: 0.1309 s/iter. Eval: 0.0016 s/iter. Total: 0.1358 s/iter. ETA=0:00:01
+[12/29 21:04:18 d2.evaluation.evaluator]: Total inference time: 0:00:12.745414 (0.135590 s / iter per device, on 1 devices)
+[12/29 21:04:18 d2.evaluation.evaluator]: Total inference pure compute time: 0:00:12 (0.130030 s / iter per device, on 1 devices)
+[12/29 21:04:18 d2.evaluation.coco_evaluation]: Preparing results for COCO format ...
+[12/29 21:04:18 d2.evaluation.coco_evaluation]: Saving results to ./output/coco_instances_results.json
+[12/29 21:04:18 d2.evaluation.coco_evaluation]: Evaluating predictions with official COCO API...
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.07s).
+Accumulating evaluation results...
+DONE (t=0.02s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.382
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.672
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.402
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.270
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.437
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.508
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.208
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.454
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.468
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.364
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.522
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.579
+[12/29 21:04:18 d2.evaluation.coco_evaluation]: Evaluation results for bbox: 
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 38.193 | 67.180 | 40.173 | 26.980 | 43.686 | 50.803 |
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *segm*
+DONE (t=0.10s).
+Accumulating evaluation results...
+DONE (t=0.02s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.400
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.694
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.414
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.261
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.462
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.554
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.224
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.466
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.477
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.354
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.531
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.623
+[12/29 21:04:19 d2.evaluation.coco_evaluation]: Evaluation results for segm: 
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 39.974 | 69.433 | 41.392 | 26.062 | 46.157 | 55.444 |
+OrderedDict([('bbox', {'AP': 38.193410794397124, 'AP50': 67.17987348351421, 'AP75': 40.17258239059353, 'APs': 26.979543660137047, 'APm': 43.68581731016578, 'APl': 50.802525864269185}), ('segm', {'AP': 39.974109496354366, 'AP50': 69.43349073771697, 'AP75': 41.392356587502135, 'APs': 26.061678447445242, 'APm': 46.157169867304724, 'APl': 55.44390860557983})])
