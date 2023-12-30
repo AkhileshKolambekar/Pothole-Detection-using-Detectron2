@@ -18,3 +18,6 @@ The flask output is as follows :-
 The streamlit output is as follows :-
 
 ![Streamlit output](https://github.com/AkhileshKolambekar/Pothole-Detection-using-Detectron2/assets/86556963/db67497d-a112-49da-afbe-17e298af0dc9)
+
+The evaluation results are as follows :-
+
