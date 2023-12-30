@@ -1,0 +1,1 @@
+This file contains the dataset in coco format. The train_coco contains images from 1 to 561, while the val_coco contains images from 563 to 661
