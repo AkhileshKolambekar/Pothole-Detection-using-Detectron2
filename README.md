@@ -21,3 +21,4 @@ The streamlit output is as follows :-
 
 The evaluation results are as follows :-
 
+![Evaluation](https://github.com/AkhileshKolambekar/Pothole-Detection-using-Detectron2/assets/86556963/ca9f6411-67d9-49a5-9e34-d54cbb2a1d7e)
