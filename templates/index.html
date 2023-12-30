@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pothole Detection</title>
+</head>
+<body>
+    <h1>Pothole Detection</h1>
+    
+    <form action="/result" method="post" enctype="multipart/form-data">
+        <label for="image">Choose an image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <input type="submit" value="Detect Potholes">
+    </form>
+</body>
+</html>
